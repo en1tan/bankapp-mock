@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank App</title>
+    <link href="assets/css/tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Heading -->
+    <div class="flex px-2 pt-2 text-xl md:text-2xl">
+      <div class="flex-auto">
+        <h3 class="p-1">Summary</h3>
+      </div>
+      <div class="flex-initial float-right">2020 <i class="fa fa-calendar fa-1_5x"></i></div>
+    </div>
+    <div class="overflow-hidden h-auto">
+      <div class="overflow-x-scroll flex gap-4 md:gap-8 p-2 md:p-4 shadow-md text-sm md:text-xl">
+        <button
+          class="flex-initial bg-white shadow-lg px-2 md:px-4 py-1 md:py-2 rounded-l-xl rounded-r-xl"
+          id="monthlyChart"
+        >
+          January
+        </button>
+        <button
+          class="flex-initial bg-white shadow-lg px-2 py-1 rounded-l-xl rounded-r-xl"
+          id="monthlyChart"
+        >
+          February
+        </button>
+        <button
+          class="flex-initial bg-white shadow-lg px-2 py-1 rounded-l-xl rounded-r-xl"
+          id="monthlyChart"
+        >
+          March
+        </button>
+        <button
+          class="flex-initial bg-white shadow-lg px-2 py-1 rounded-l-xl rounded-r-xl"
+          id="monthlyChart"
+        >
+          April
+        </button>
+        <button
+          class="flex-initial bg-white shadow-lg px-2 py-1 rounded-l-xl rounded-r-xl"
+          id="monthlyChart"
+        >
+          May
+        </button>
+        <button
+          class="flex-initial bg-white shadow-lg px-2 py-1 rounded-l-xl rounded-r-xl"
+          id="monthlyChart"
+        >
+          June
+        </button>
+        <button
+          class="flex-initial bg-white shadow-lg px-2 py-1 rounded-l-xl rounded-r-xl"
+          id="monthlyChart"
+        >
+          July
+        </button>
+        <button
+          class="flex-initial bg-white shadow-lg px-2 py-1 rounded-l-xl rounded-r-xl"
+          id="monthlyChart"
+        >
+          August
+        </button>
+        <button
+          class="flex-initial bg-white shadow-lg px-2 py-1 rounded-l-xl rounded-r-xl"
+          id="monthlyChart"
+        >
+          September
+        </button>
+        <button
+          class="flex-initial bg-white shadow-lg px-2 py-1 rounded-l-xl rounded-r-xl"
+          id="monthlyChart"
+        >
+          October
+        </button>
+        <button
+          class="flex-initial bg-white shadow-lg px-2 py-1 rounded-l-xl rounded-r-xl"
+          id="monthlyChart"
+        >
+          November
+        </button>
+        <button
+          class="flex-initial bg-white shadow-lg px-2 py-1 rounded-l-xl rounded-r-xl"
+          id="monthlyChart"
+        >
+          December
+        </button>
+      </div>
+    </div>
+    <!-- End heading-->
+    <!-- Total Transaction Details-->
+    <div class="text-center mx-auto mt-2 sticky top-0 bg-gray-100 shadow-lg">
+      <h3 class="text-2xl pl-6">Transactions</h3>
+      <!-- <div class="mt-4"> -->
+
+      <!-- <button class="rounded-2xl bg-white text-black p-2 shadow-md" id="weeklyChart">7 Days</button> -->
+      <!-- </div> -->
+      <div id="transactions_chart" class="-mt-4"></div>
+    </div>
+    <!-- Emd Transaction Details -->
+    <!-- Transaction Cards -->
+    <div class="overflow-hidden h-auto">
+      <div class="overlow-y-scroll">
+        <div class="px-4 md:px-12 p-3 md:py-16 md:mx-12 text-black">
+          <div
+            class="bg-white border-2 border-green-500 flex p-2 m-2 hover:p-4 rounded-xl shadow-lg md:text-3xl"
+          >
+            <div class="flex-auto w-48 align-middle self-center uppercase">
+              trf//frm john doe to mariah carey
+            </div>
+            <div class="flex-auto self-center text-green-700 text-right font-bold">+#5000</div>
+          </div>
+          <div
+            class="bg-white border-2 border-red-500 m-2 flex p-2 hover:p-4 rounded-xl shadow-lg md:text-3xl"
+          >
+            <div class="flex-auto w-48 align-middle self-center uppercase">
+              trf//frm john doe to mariah carey
+            </div>
+            <div class="flex-auto self-center text-red-700 text-right font-bold">-#5000</div>
+          </div>
+          <div
+            class="bg-white border-2 border-green-500 m-2 flex p-2 hover:p-4 rounded-xl shadow-lg md:text-3xl"
+          >
+            <div class="flex-auto w-48 align-middle self-center uppercase">
+              trf//to john doe to mariah carey
+            </div>
+            <div class="flex-auto self-center text-green-700 text-right font-bold">+#450</div>
+          </div>
+          <div
+            class="bg-white border-2 border-red-500 m-2 flex p-2 hover:p-4 rounded-xl shadow-lg md:text-3xl"
+          >
+            <div class="flex-auto w-48 align-middle self-center uppercase">
+              Airtime john doe to mariah carey
+            </div>
+            <div class="flex-auto self-center text-red-700 text-right font-bold">-#500</div>
+          </div>
+          <div
+            class="bg-white border-2 border-green-500 flex p-2 m-2 hover:p-4 rounded-xl shadow-lg md:text-3xl"
+          >
+            <div class="flex-auto w-48 align-middle self-center uppercase">
+              trf//frm john doe to mariah carey
+            </div>
+            <div class="flex-auto self-center text-green-700 text-right font-bold">+#5000</div>
+          </div>
+          <div
+            class="bg-white border-2 border-red-500 m-2 flex p-2 hover:p-4 rounded-xl shadow-lg md:text-3xl"
+          >
+            <div class="flex-auto w-48 align-middle self-center uppercase">
+              trf//frm john doe to mariah carey
+            </div>
+            <div class="flex-auto self-center text-red-700 text-right font-bold">-#5000</div>
+          </div>
+          <div
+            class="bg-white border-2 border-green-500 m-2 flex p-2 hover:p-4 rounded-xl shadow-lg md:text-3xl"
+          >
+            <div class="flex-auto w-48 align-middle self-center uppercase">
+              trf//to john doe to mariah carey
+            </div>
+            <div class="flex-auto self-center text-green-700 text-right font-bold">+#450</div>
+          </div>
+          <div
+            class="bg-white border-2 border-red-500 m-2 flex p-2 hover:p-4 rounded-xl shadow-lg md:text-3xl"
+          >
+            <div class="flex-auto w-48 align-middle self-center uppercase">
+              Airtime john doe to mariah carey
+            </div>
+            <div class="flex-auto self-center text-red-700 text-right font-bold">-#500</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Transaction Cards -->
+
+    <!-- Menu Footer -->
+    <div class="flex fixed bottom-0 text-center px-2 md:pl-40 text-gray-500 bg-white w-full">
+      <div class="w-1/5 md:w-1/6 sm:w-1/4 pt-2">
+        <a href="/" class="text-blue-600 align-text-top text-sm">
+          <span class="text-2xl"><i class="fa fa-th-large" aria-hidden="true"></i></span>
+          <br />
+          <span class="text-gray-500">Home</span>
+        </a>
+      </div>
+      <div class="w-1/5 md:w-1/6 sm:w-1/4 pt-2">
+        <a href="report.html" class="text-blue-600 align-text-top text-sm">
+          <span class="text-2xl"><i class="fa fa-pie-chart" aria-hidden="true"></i></span>
+          <br />
+          <span class="text-gray-500">Reports</span>
+        </a>
+      </div>
+      <button class="w-1/5 md:w-1/6 sm:w-1/4">
+        <span class="text-2xl"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+        <p class="text-gray-600 align-text-top text-sm">Payments</p></button
+      ><button class="w-1/5 md:w-1/6 sm:w-1/4">
+        <span class="text-2xl"><i class="fa fa-tasks" aria-hidden="true"></i></span>
+        <p class="text-gray-600 align-text-top text-sm">Services</p></button
+      ><button class="w-1/5 md:w-1/6 sm:w-1/4">
+        <span class="text-2xl"><i class="fa fa-question" aria-hidden="true"></i></span>
+        <p class="text-gray-600 align-text-top text-sm">Help</p>
+      </button>
+    </div>
+    <!-- End Menu Footer -->
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="assets/js/moneyChart.js"></script>
+    <script src="https://use.fontawesome.com/7e28c05b53.js"></script>
+  </body>
+</html>
