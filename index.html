@@ -5,10 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bank App</title>
     <link href="./assets/css/tailwind.css" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/7e28c05b53.js"></script>
+    <link href="./assets/css/style.css" rel="stylesheet" />
   </head>
 
   <body class="bg-gray-100">
+    <!-- Utilities -->
+    <!-- Notifications -->
+    <div class="absolute top-0 right-0 m-8 p-2 bg-gray-100 shadow-lg rounded-md notification-list">
+      <ul class="bg-white text-sm">
+        <li class="shadow-md flex rounded-md my-2">
+          <span class="self-center px-6 text-orange-600 h-auto">
+            <i class="fa fa-exclamation fa-1_5x"></i>
+          </span>
+          <div class="flex-1 pt-2">
+            <p class="leading-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <span class="text-gray-600">5 mins</span>
+          </div>
+          <a href="#" class="flex-initial pr-4 px-4">
+            <i class="fa fa-1_5x fa-chevron-right pt-5"></i>
+          </a>
+        </li>
+        <li class="shadow-lg text-black flex rounded-md my-2 bg-green-300">
+          <span class="self-center text-green-900 px-4 h-auto">
+            <i class="fa fa-check fa-1_5x"></i>
+          </span>
+          <div class="flex-1 pt-2">
+            <p class="leading-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <span class="text-gray-600">5 mins</span>
+          </div>
+          <a href="#" class="flex-initial pr-4 px-4">
+            <i class="fa fa-1_5x fa-chevron-right pt-5"></i>
+          </a>
+        </li>
+        <li class="shadow-md bg-white flex rounded-md my-2 border-4 border-red-300">
+          <span class="self-center px-4 text-red-600 h-auto">
+            <i class="fa fa-times fa-1_5x"></i>
+          </span>
+          <div class="flex-1 pt-2">
+            <p class="leading-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <span class="text-gray-600">5 mins</span>
+          </div>
+          <a href="#" class="flex-initial pr-4 px-4">
+            <i class="fa fa-1_5x fa-chevron-right pt-5"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Utilities -->
     <!-- Heading -->
     <div class="flex flex-wrap p-4 mb-2">
       <div class="w-1/9">
@@ -17,7 +60,7 @@
       <div class="flex-1 text-center">
         <h3 class="text-2xl">Hi Mobola</h3>
       </div>
-      <div class="w-1/10 float-right text-blue-600">
+      <div class="w-1/10 float-right text-blue-600 open-notification-list" role="button">
         <i class="fa fa-bell"></i>
       </div>
     </div>
@@ -100,5 +143,9 @@
         </button>
       </div>
     </div>
+
+    <script src="https://use.fontawesome.com/7e28c05b53.js"></script>
+    <script src="./assets/js/vendor.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

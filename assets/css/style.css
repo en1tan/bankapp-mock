@@ -1,3 +1,17 @@
 .fa-1_5x {
-    font-size: 1.5em!important;
+  font-size: 1.5em !important;
+}
+
+.notification-list {
+  top: -999px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.notification-list.notification-list-show {
+  top: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
