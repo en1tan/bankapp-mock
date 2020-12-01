@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bank App</title>
+    <title>Bank App - Reports</title>
     <link href="./assets/css/tailwind.css" rel="stylesheet" />
     <link href="./assets/css/style.css" rel="stylesheet" />
   </head>
@@ -114,10 +114,12 @@
           <span class="text-3xl -mb-2"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
           <span class="text-gray-600 align-text-top">Send</span>
         </button>
-        <button class="w-1/4 p-2">
-          <span class="text-3xl -mb-2"><i class="fa fa-file-text" aria-hidden="true"></i></span>
-          <span class="text-gray-600 align-text-top">Bills</span>
-        </button>
+        <a href="bills.html" class="w-1/4 p-2">
+          <button>
+            <span class="text-3xl -mb-2"><i class="fa fa-file-text" aria-hidden="true"></i></span>
+            <span class="text-gray-600 align-text-top">Bills</span>
+          </button>
+        </a>
       </div>
       <!-- Sub Actions -->
       <div class="grid grid-cols-2 gap-4 w-48 mx-auto p-2 sub-actions hidden">
@@ -137,7 +139,7 @@
 
     <!-- Transactions -->
     <div class="shadow-inner bg-gray-300 h-screen w-full m-auto">
-      <div class="flex flex-wrap mb-4 p-2">
+      <div class="flex flex-wrap p-2">
         <div class="flex-1">
           <span class="text-gray-500 text-sm font-bold">Updated now</span>
         </div>
@@ -191,6 +193,11 @@
     </div>
 
     <script src="https://use.fontawesome.com/7e28c05b53.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+      integrity="sha512-7yA/d79yIhHPvcrSiB8S/7TyX0OxlccU8F/kuB8mHYjLlF1MInPbEohpoqfz0AILoq5hoD7lELZAYYHbyeEjag=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/vendor.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
