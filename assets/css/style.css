@@ -2,15 +2,29 @@
   font-size: 1.5em !important;
 }
 
-.notification-list {
-  top: -999px;
+.send-airtime {
+  bottom: -999px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 
-.notification-list.notification-list-show {
-  top: 0;
+.send-airtime.send-airtime-show {
+  bottom: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.send-data {
+  bottom: -999px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.send-data.send-data-show {
+  bottom: 0;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
